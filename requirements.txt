@@ -1,0 +1,14 @@
+
+requests
+beautifulsoup4
+lxml
+pillow
+open_clip_torch
+numpy
+Pillow
+scikit-learn
+
+fastapi
+uvicorn
+python-multipart
+jinja2

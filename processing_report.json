@@ -1,0 +1,188 @@
+{
+    "total_catalog_records": 30,
+    "processed": 30,
+    "failed": 0,
+    "missing": 0,
+    "results": [
+        {
+            "saree_id": "S001",
+            "source_image": "saree001.jpg",
+            "processed_image": "S001.jpg",
+            "status": "success"
+        },
+        {
+            "saree_id": "S002",
+            "source_image": "saree002.jpg",
+            "processed_image": "S002.jpg",
+            "status": "success"
+        },
+        {
+            "saree_id": "S003",
+            "source_image": "saree003.jpg",
+            "processed_image": "S003.jpg",
+            "status": "success"
+        },
+        {
+            "saree_id": "S004",
+            "source_image": "saree004.jpg",
+            "processed_image": "S004.jpg",
+            "status": "success"
+        },
+        {
+            "saree_id": "S005",
+            "source_image": "saree005.jpg",
+            "processed_image": "S005.jpg",
+            "status": "success"
+        },
+        {
+            "saree_id": "S006",
+            "source_image": "saree006.jpg",
+            "processed_image": "S006.jpg",
+            "status": "success"
+        },
+        {
+            "saree_id": "S007",
+            "source_image": "saree007.jpg",
+            "processed_image": "S007.jpg",
+            "status": "success"
+        },
+        {
+            "saree_id": "S008",
+            "source_image": "saree008.jpg",
+            "processed_image": "S008.jpg",
+            "status": "success"
+        },
+        {
+            "saree_id": "S009",
+            "source_image": "saree009.jpg",
+            "processed_image": "S009.jpg",
+            "status": "success"
+        },
+        {
+            "saree_id": "S010",
+            "source_image": "saree010.jpg",
+            "processed_image": "S010.jpg",
+            "status": "success"
+        },
+        {
+            "saree_id": "S011",
+            "source_image": "saree011.jpg",
+            "processed_image": "S011.jpg",
+            "status": "success"
+        },
+        {
+            "saree_id": "S012",
+            "source_image": "saree012.jpg",
+            "processed_image": "S012.jpg",
+            "status": "success"
+        },
+        {
+            "saree_id": "S013",
+            "source_image": "saree013.jpg",
+            "processed_image": "S013.jpg",
+            "status": "success"
+        },
+        {
+            "saree_id": "S014",
+            "source_image": "saree014.jpg",
+            "processed_image": "S014.jpg",
+            "status": "success"
+        },
+        {
+            "saree_id": "S015",
+            "source_image": "saree015.jpg",
+            "processed_image": "S015.jpg",
+            "status": "success"
+        },
+        {
+            "saree_id": "S016",
+            "source_image": "saree016.jpg",
+            "processed_image": "S016.jpg",
+            "status": "success"
+        },
+        {
+            "saree_id": "S017",
+            "source_image": "saree017.jpg",
+            "processed_image": "S017.jpg",
+            "status": "success"
+        },
+        {
+            "saree_id": "S018",
+            "source_image": "saree018.jpg",
+            "processed_image": "S018.jpg",
+            "status": "success"
+        },
+        {
+            "saree_id": "S019",
+            "source_image": "saree019.jpg",
+            "processed_image": "S019.jpg",
+            "status": "success"
+        },
+        {
+            "saree_id": "S020",
+            "source_image": "saree020.jpg",
+            "processed_image": "S020.jpg",
+            "status": "success"
+        },
+        {
+            "saree_id": "S021",
+            "source_image": "saree021.jpg",
+            "processed_image": "S021.jpg",
+            "status": "success"
+        },
+        {
+            "saree_id": "S022",
+            "source_image": "saree022.jpg",
+            "processed_image": "S022.jpg",
+            "status": "success"
+        },
+        {
+            "saree_id": "S023",
+            "source_image": "saree023.jpg",
+            "processed_image": "S023.jpg",
+            "status": "success"
+        },
+        {
+            "saree_id": "S024",
+            "source_image": "saree024.jpg",
+            "processed_image": "S024.jpg",
+            "status": "success"
+        },
+        {
+            "saree_id": "S025",
+            "source_image": "saree025.jpg",
+            "processed_image": "S025.jpg",
+            "status": "success"
+        },
+        {
+            "saree_id": "S026",
+            "source_image": "saree026.jpg",
+            "processed_image": "S026.jpg",
+            "status": "success"
+        },
+        {
+            "saree_id": "S027",
+            "source_image": "saree027.jpg",
+            "processed_image": "S027.jpg",
+            "status": "success"
+        },
+        {
+            "saree_id": "S028",
+            "source_image": "saree028.jpg",
+            "processed_image": "S028.jpg",
+            "status": "success"
+        },
+        {
+            "saree_id": "S029",
+            "source_image": "saree029.jpg",
+            "processed_image": "S029.jpg",
+            "status": "success"
+        },
+        {
+            "saree_id": "S030",
+            "source_image": "saree030.jpg",
+            "processed_image": "S030.jpg",
+            "status": "success"
+        }
+    ]
+}

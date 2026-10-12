@@ -1,0 +1,207 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saree Matcher</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1100px;
+            margin: 35px auto;
+            padding: 0 18px;
+            background: #faf8f5;
+            color: #28231f;
+        }
+
+        h1, h2 {
+            text-align: center;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #75685e;
+            margin-bottom: 28px;
+        }
+
+        .panel {
+            background: white;
+            padding: 24px;
+            border-radius: 14px;
+            box-shadow: 0 3px 18px #0000000d;
+            max-width: 650px;
+            margin: 0 auto 30px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin: 14px 0 7px;
+        }
+
+        input, button {
+            box-sizing: border-box;
+            width: 100%;
+            padding: 12px;
+            border-radius: 7px;
+            border: 1px solid #d8d0c7;
+        }
+
+        button {
+            margin-top: 22px;
+            background: #713f32;
+            color: white;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 3px 15px #0000000c;
+        }
+
+        .card img {
+            width: 100%;
+            aspect-ratio: 3 / 4;
+            object-fit: contain;
+            background: #f5f3f0;
+        }
+
+        .details {
+            padding: 16px;
+        }
+
+        .price {
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .score {
+            color: #65594e;
+            font-size: 13px;
+        }
+
+        .buy {
+            display: inline-block;
+            margin-top: 12px;
+            color: #713f32;
+            font-weight: bold;
+        }
+
+        .error {
+            color: #a02020;
+            text-align: center;
+        }
+
+        .empty {
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Find Your Perfect Saree</h1>
+    <p class="subtitle">
+        Upload a blouse-piece photo to discover matching sarees.
+    </p>
+
+    <form class="panel" method="post" enctype="multipart/form-data">
+        <label for="blouse_image">Blouse-piece image</label>
+        <input
+            type="file"
+            id="blouse_image"
+            name="blouse_image"
+            accept="image/jpeg,image/png,image/webp"
+            required
+        >
+
+        <label for="max_price">Maximum budget (₹)</label>
+        <input
+            type="number"
+            id="max_price"
+            name="max_price"
+            min="0"
+            step="1"
+            value="{{ max_price if max_price is defined else 3000 }}"
+            required
+        >
+
+        <label for="top_k">Number of recommendations</label>
+        <input
+            type="number"
+            id="top_k"
+            name="top_k"
+            min="1"
+            max="20"
+            value="{{ top_k if top_k is defined else 5 }}"
+            required
+        >
+
+        <button type="submit">Find Matching Sarees</button>
+    </form>
+
+    {% if error %}
+        <p class="error">{{ error }}</p>
+    {% endif %}
+
+    {% if recommendations is not none %}
+        <h2>Recommended Sarees</h2>
+
+        {% if recommendations %}
+            <div class="grid">
+                {% for item in recommendations %}
+                    <div class="card">
+                        <img
+                            src="/catalog-images/{{ item.saree_id }}.jpg"
+                            alt="{{ item.name }}"
+                        >
+
+                        <div class="details">
+                            <h3>{{ item.name }}</h3>
+
+                            <p class="price">
+                                ₹{{ "%.2f"|format(item.price) if item.price is not none else "Price unavailable" }}
+                            </p>
+
+                            <p class="score">
+                                Visual similarity:
+                                {{ "%.1f"|format(item.visual_similarity * 100) }}%
+                            </p>
+
+                            <p class="score">
+                                Color similarity:
+                                {{ "%.1f"|format(item.color_similarity * 100) }}%
+                            </p>
+
+                            {% if item.product_url and item.product_url.startswith("https://www.rimasilks.com/products/") %}
+                                <a
+                                    class="buy"
+                                    href="{{ item.product_url }}"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >View product</a>
+                            {% endif %}
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        {% elif not error %}
+            <p class="empty">
+                No sarees matched your budget. Try increasing your maximum price.
+            </p>
+        {% endif %}
+    {% endif %}
+</body>
+</html>
