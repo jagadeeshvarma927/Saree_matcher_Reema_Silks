@@ -185,7 +185,7 @@
                                 {{ "%.1f"|format(item.color_similarity * 100) }}%
                             </p>
 
-                            {% if item.product_url and item.product_url.startswith("https://www.rimasilks.com/products/") %}
+                            {% if item.product_url_allowed %}
                                 <a
                                     class="buy"
                                     href="{{ item.product_url }}"

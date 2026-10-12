@@ -1,1 +1,15 @@
 venv/
+saree_images/
+processed_images/
+
+
+.env
+.env.*
+!.env.example
+
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+
+uploads/

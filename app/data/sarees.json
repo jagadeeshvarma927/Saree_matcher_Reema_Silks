@@ -1,242 +1,1082 @@
 [
-    {
-        "saree_id": "S001",
-        "name": "Yellow small Butta Benarasi chiffon saree",
-        "price": 2026.0,
-        "image": "saree001.jpg",
-        "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_163554_1.jpg?v=1780668879",
-        "product_url": "https://www.rimasilks.com/products/ightweight"
-    },
-    {
-        "saree_id": "S002",
-        "name": "Red small Butta Benarasi chiffon saree",
-        "price": 2026.0,
-        "image": "saree002.jpg",
-        "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_163538_1_7f8f2489-84eb-4409-b5ae-f4f51bb1bf74.jpg?v=1780668707",
-        "product_url": "https://www.rimasilks.com/products/lightweight"
-    },
-    {
-        "saree_id": "S003",
-        "name": "Blue small Butta Benarasi chiffon saree",
-        "price": 2026.0,
-        "image": "saree003.jpg",
-        "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_162953_1.jpg?v=1780664268",
-        "product_url": "https://www.rimasilks.com/products/blue-small-butta-benarasi-chiffon-saree"
-    },
-    {
-        "saree_id": "S004",
-        "name": "Purple small Butta Benarasi chiffon saree",
-        "price": 2026.0,
-        "image": "saree004.jpg",
-        "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_170243_1.jpg?v=1780666726",
-        "product_url": "https://www.rimasilks.com/products/purple-small-butta-semi-chiffon-benarasi-105-saree"
-    },
-    {
-        "saree_id": "S005",
-        "name": "Banarasi Georgette Saree",
-        "price": 2026.0,
-        "image": "saree005.jpg",
-        "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_161910_1.jpg?v=1781776380",
-        "product_url": "https://www.rimasilks.com/products/aa-29"
-    },
-    {
-        "saree_id": "S006",
-        "name": "Banarasi Georgette Saree",
-        "price": 2026.0,
-        "image": "saree006.jpg",
-        "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_163153_1.jpg?v=1781876877",
-        "product_url": "https://www.rimasilks.com/products/aa-33"
-    },
-    {
-        "saree_id": "S007",
-        "name": "Banarasi Georgette Saree",
-        "price": 2026.0,
-        "image": "saree007.jpg",
-        "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_163021_1.jpg?v=1781776444",
-        "product_url": "https://www.rimasilks.com/products/aa-30"
-    },
-    {
-        "saree_id": "S008",
-        "name": "Banarasi Georgette Saree",
-        "price": 2026.0,
-        "image": "saree008.jpg",
-        "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_164336_1.jpg?v=1781877239",
-        "product_url": "https://www.rimasilks.com/products/aa-38"
-    },
-    {
-        "saree_id": "S009",
-        "name": "Banarasi Georgette Saree",
-        "price": 2026.0,
-        "image": "saree009.jpg",
-        "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_165301_1.jpg?v=1781877355",
-        "product_url": "https://www.rimasilks.com/products/aa-40"
-    },
-    {
-        "saree_id": "S010",
-        "name": "Banarasi Georgette Saree",
-        "price": 2026.0,
-        "image": "saree010.jpg",
-        "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_163328_1.jpg?v=1781877064",
-        "product_url": "https://www.rimasilks.com/products/aa-36"
-    },
-    {
-        "saree_id": "S011",
-        "name": "Banarasi Georgette Saree",
-        "price": 2026.0,
-        "image": "saree011.jpg",
-        "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_161721_1.jpg?v=1781776181",
-        "product_url": "https://www.rimasilks.com/products/aa-26"
-    },
-    {
-        "saree_id": "S012",
-        "name": "Banarasi Georgette Saree",
-        "price": 2026.0,
-        "image": "saree012.jpg",
-        "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_164356_1.jpg?v=1781877296",
-        "product_url": "https://www.rimasilks.com/products/aa-39"
-    },
-    {
-        "saree_id": "S013",
-        "name": "Banarasi Georgette Saree",
-        "price": 2026.0,
-        "image": "saree013.jpg",
-        "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_163346_1.jpg?v=1781877134",
-        "product_url": "https://www.rimasilks.com/products/aa-37"
-    },
-    {
-        "saree_id": "S014",
-        "name": "Banarasi Georgette Saree",
-        "price": 2026.0,
-        "image": "saree014.jpg",
-        "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_161759_1.jpg?v=1781776232",
-        "product_url": "https://www.rimasilks.com/products/aa-27"
-    },
-    {
-        "saree_id": "S015",
-        "name": "Banarasi Georgette Saree",
-        "price": 2026.0,
-        "image": "saree015.jpg",
-        "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_163135_1.jpg?v=1781876799",
-        "product_url": "https://www.rimasilks.com/products/aa-32"
-    },
-    {
-        "saree_id": "S016",
-        "name": "Banarasi Georgette Saree",
-        "price": 2026.0,
-        "image": "saree016.jpg",
-        "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_163211_1_b93ae83f-cdb9-499e-a578-576671a095d8.jpg?v=1781876999",
-        "product_url": "https://www.rimasilks.com/products/aa-35"
-    },
-    {
-        "saree_id": "S017",
-        "name": "Banarasi Georgette Saree",
-        "price": 2026.0,
-        "image": "saree017.jpg",
-        "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_163119_1.jpg?v=1781876724",
-        "product_url": "https://www.rimasilks.com/products/aa-12"
-    },
-    {
-        "saree_id": "S018",
-        "name": "Banarasi Georgette Saree",
-        "price": 2026.0,
-        "image": "saree018.jpg",
-        "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_161841_1.jpg?v=1781776328",
-        "product_url": "https://www.rimasilks.com/products/aa-28"
-    },
-    {
-        "saree_id": "S019",
-        "name": "Banarasi Georgette Saree",
-        "price": 2026.0,
-        "image": "saree019.jpg",
-        "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_170210_1.jpg?v=1781877400",
-        "product_url": "https://www.rimasilks.com/products/aa-41"
-    },
-    {
-        "saree_id": "S020",
-        "name": "Banarasi Georgette Saree",
-        "price": 2026.0,
-        "image": "saree020.jpg",
-        "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_163101_1.jpg?v=1781776504",
-        "product_url": "https://www.rimasilks.com/products/aa-31"
-    },
-    {
-        "saree_id": "S021",
-        "name": "Pure Mashru satin silk saree",
-        "price": 2026.0,
-        "image": "saree021.jpg",
-        "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_164648_1.jpg?v=1782041593",
-        "product_url": "https://www.rimasilks.com/products/aa-58"
-    },
-    {
-        "saree_id": "S022",
-        "name": "Pure Mashru satin silk saree 111",
-        "price": 2026.0,
-        "image": "saree022.jpg",
-        "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_170444_1.jpg?v=1782136543",
-        "product_url": "https://www.rimasilks.com/products/aa-61"
-    },
-    {
-        "saree_id": "S023",
-        "name": "Pure Mashru satin silk saree",
-        "price": 2026.0,
-        "image": "saree023.jpg",
-        "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_163443_1.jpg?v=1781182530",
-        "product_url": "https://www.rimasilks.com/products/aa-11"
-    },
-    {
-        "saree_id": "S024",
-        "name": "Mashru satin silk saree",
-        "price": 2026.0,
-        "image": "saree024.jpg",
-        "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_165614_1.jpg?v=1782041641",
-        "product_url": "https://www.rimasilks.com/products/aa-59"
-    },
-    {
-        "saree_id": "S025",
-        "name": "Pure Mashru satin silk saree",
-        "price": 2026.0,
-        "image": "saree025.jpg",
-        "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_163939_1.jpg?v=1782041398",
-        "product_url": "https://www.rimasilks.com/products/aa-55"
-    },
-    {
-        "saree_id": "S026",
-        "name": "Pure Mashru satin silk saree",
-        "price": 2026.0,
-        "image": "saree026.jpg",
-        "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_163738_1.jpg?v=1781183053",
-        "product_url": "https://www.rimasilks.com/products/aa-15"
-    },
-    {
-        "saree_id": "S027",
-        "name": "Pure Mahru satin silk saree 111",
-        "price": 2026.0,
-        "image": "saree027.jpg",
-        "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_170427_1.jpg?v=1782136235",
-        "product_url": "https://www.rimasilks.com/products/aa-60"
-    },
-    {
-        "saree_id": "S028",
-        "name": "Pure Mashru satin silk saree 111",
-        "price": 2026.0,
-        "image": "saree028.jpg",
-        "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_170358_1.jpg?v=1782136176",
-        "product_url": "https://www.rimasilks.com/products/aa-34"
-    },
-    {
-        "saree_id": "S029",
-        "name": "Pure Mashru satin silk saree",
-        "price": 2026.0,
-        "image": "saree029.jpg",
-        "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_163514_1.jpg?v=1781182886",
-        "product_url": "https://www.rimasilks.com/products/aa-13"
-    },
-    {
-        "saree_id": "S030",
-        "name": "Pure Mashru satin silk saree",
-        "price": 2026.0,
-        "image": "saree030.jpg",
-        "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_171614_1_f1ffbfc8-0d0f-437f-8fc3-db1d73a76a8c.jpg?v=1782136619",
-        "product_url": "https://www.rimasilks.com/products/aa-62"
-    }
+  {
+    "saree_id": "S00001",
+    "name": "Banarasi Georgette Saree",
+    "price": 3999.0,
+    "image": "saree00001.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_161319_1.jpg?v=1781012284",
+    "product_url": "https://www.rimasilks.com/products/a1"
+  },
+  {
+    "saree_id": "S00002",
+    "name": "Banarasi Georgette Saree",
+    "price": 3999.0,
+    "image": "saree00002.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_161204_1.jpg?v=1781012198",
+    "product_url": "https://www.rimasilks.com/products/aa"
+  },
+  {
+    "saree_id": "S00003",
+    "name": "Dola soft silk digital print saree",
+    "price": 2999.0,
+    "image": "saree00003.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_172046_1.jpg?v=1781013953",
+    "product_url": "https://www.rimasilks.com/products/aa-1"
+  },
+  {
+    "saree_id": "S00004",
+    "name": "Pure Mashru satin silk saree",
+    "price": 4999.0,
+    "image": "saree00004.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_163421_1.jpg?v=1781182432",
+    "product_url": "https://www.rimasilks.com/products/aa-10"
+  },
+  {
+    "saree_id": "S00005",
+    "name": "Pure Mashru satin silk saree",
+    "price": 4999.0,
+    "image": "saree00005.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_163443_1.jpg?v=1781182530",
+    "product_url": "https://www.rimasilks.com/products/aa-11"
+  },
+  {
+    "saree_id": "S00006",
+    "name": "Banarasi Georgette Saree",
+    "price": 3999.0,
+    "image": "saree00006.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_163119_1.jpg?v=1781876724",
+    "product_url": "https://www.rimasilks.com/products/aa-12"
+  },
+  {
+    "saree_id": "S00007",
+    "name": "Pure Mashru satin silk saree",
+    "price": 4999.0,
+    "image": "saree00007.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_163514_1.jpg?v=1781182886",
+    "product_url": "https://www.rimasilks.com/products/aa-13"
+  },
+  {
+    "saree_id": "S00008",
+    "name": "Pure Mashru satin silk saree",
+    "price": 4999.0,
+    "image": "saree00008.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_163639_1.jpg?v=1781182963",
+    "product_url": "https://www.rimasilks.com/products/aa-14"
+  },
+  {
+    "saree_id": "S00009",
+    "name": "Pure Mashru satin silk saree",
+    "price": 4999.0,
+    "image": "saree00009.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_163738_1.jpg?v=1781183053",
+    "product_url": "https://www.rimasilks.com/products/aa-15"
+  },
+  {
+    "saree_id": "S00010",
+    "name": "Pure kanchipuram tissue with digital print saree",
+    "price": 4999.0,
+    "image": "saree00010.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_165903_1.jpg?v=1781184696",
+    "product_url": "https://www.rimasilks.com/products/aa-16"
+  },
+  {
+    "saree_id": "S00011",
+    "name": "Banarasi Georgette Saree",
+    "price": 3999.0,
+    "image": "saree00011.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_161546_1.jpg?v=1781270252",
+    "product_url": "https://www.rimasilks.com/products/aa-17"
+  },
+  {
+    "saree_id": "S00012",
+    "name": "Banarasi Georgette Saree",
+    "price": 3999.0,
+    "image": "saree00012.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_161608_1.jpg?v=1781270340",
+    "product_url": "https://www.rimasilks.com/products/aa-18"
+  },
+  {
+    "saree_id": "S00013",
+    "name": "Mashru Crepe Saree",
+    "price": 3999.0,
+    "image": "saree00013.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_162146_1.jpg?v=1781620438",
+    "product_url": "https://www.rimasilks.com/products/aa-19"
+  },
+  {
+    "saree_id": "S00014",
+    "name": "Dola soft silk digital print saree",
+    "price": 2999.0,
+    "image": "saree00014.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_172108_1.jpg?v=1781014064",
+    "product_url": "https://www.rimasilks.com/products/aa-2"
+  },
+  {
+    "saree_id": "S00015",
+    "name": "Mashru Crepe Saree",
+    "price": 3999.0,
+    "image": "saree00015.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_162213_1.jpg?v=1781620519",
+    "product_url": "https://www.rimasilks.com/products/aa-20"
+  },
+  {
+    "saree_id": "S00016",
+    "name": "Mashru Crepe Saree",
+    "price": 3999.0,
+    "image": "saree00016.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_162230_1.jpg?v=1781620572",
+    "product_url": "https://www.rimasilks.com/products/aa-21"
+  },
+  {
+    "saree_id": "S00017",
+    "name": "Mashru Crepe Saree",
+    "price": 3999.0,
+    "image": "saree00017.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_162611_1.jpg?v=1781621509",
+    "product_url": "https://www.rimasilks.com/products/aa-22"
+  },
+  {
+    "saree_id": "S00018",
+    "name": "Mashru Crepe Saree MC1",
+    "price": 3999.0,
+    "image": "saree00018.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_162639_1.jpg?v=1781621559",
+    "product_url": "https://www.rimasilks.com/products/aa-23"
+  },
+  {
+    "saree_id": "S00019",
+    "name": "Banarasi Georgette Saree",
+    "price": 3999.0,
+    "image": "saree00019.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_161636_1.jpg?v=1781776025",
+    "product_url": "https://www.rimasilks.com/products/aa-24"
+  },
+  {
+    "saree_id": "S00020",
+    "name": "Banarasi Georgette Saree",
+    "price": 3999.0,
+    "image": "saree00020.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_161655_1.jpg?v=1781776139",
+    "product_url": "https://www.rimasilks.com/products/aa-25"
+  },
+  {
+    "saree_id": "S00021",
+    "name": "Banarasi Georgette Saree",
+    "price": 3999.0,
+    "image": "saree00021.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_161721_1.jpg?v=1781776181",
+    "product_url": "https://www.rimasilks.com/products/aa-26"
+  },
+  {
+    "saree_id": "S00022",
+    "name": "Banarasi Georgette Saree",
+    "price": 3999.0,
+    "image": "saree00022.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_161759_1.jpg?v=1781776232",
+    "product_url": "https://www.rimasilks.com/products/aa-27"
+  },
+  {
+    "saree_id": "S00023",
+    "name": "Banarasi Georgette Saree",
+    "price": 3999.0,
+    "image": "saree00023.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_161841_1.jpg?v=1781776328",
+    "product_url": "https://www.rimasilks.com/products/aa-28"
+  },
+  {
+    "saree_id": "S00024",
+    "name": "Banarasi Georgette Saree",
+    "price": 3999.0,
+    "image": "saree00024.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_161910_1.jpg?v=1781776380",
+    "product_url": "https://www.rimasilks.com/products/aa-29"
+  },
+  {
+    "saree_id": "S00025",
+    "name": "Dola soft silk digital print saree",
+    "price": 2999.0,
+    "image": "saree00025.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_172132_1.jpg?v=1781014222",
+    "product_url": "https://www.rimasilks.com/products/aa-3"
+  },
+  {
+    "saree_id": "S00026",
+    "name": "Banarasi Georgette Saree",
+    "price": 3999.0,
+    "image": "saree00026.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_163021_1.jpg?v=1781776444",
+    "product_url": "https://www.rimasilks.com/products/aa-30"
+  },
+  {
+    "saree_id": "S00027",
+    "name": "Banarasi Georgette Saree",
+    "price": 3999.0,
+    "image": "saree00027.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_163101_1.jpg?v=1781776504",
+    "product_url": "https://www.rimasilks.com/products/aa-31"
+  },
+  {
+    "saree_id": "S00028",
+    "name": "Banarasi Georgette Saree",
+    "price": 3999.0,
+    "image": "saree00028.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_163135_1.jpg?v=1781876799",
+    "product_url": "https://www.rimasilks.com/products/aa-32"
+  },
+  {
+    "saree_id": "S00029",
+    "name": "Banarasi Georgette Saree",
+    "price": 3999.0,
+    "image": "saree00029.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_163153_1.jpg?v=1781876877",
+    "product_url": "https://www.rimasilks.com/products/aa-33"
+  },
+  {
+    "saree_id": "S00030",
+    "name": "Pure Mashru satin silk saree 111",
+    "price": 4999.0,
+    "image": "saree00030.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_170358_1.jpg?v=1782136176",
+    "product_url": "https://www.rimasilks.com/products/aa-34"
+  },
+  {
+    "saree_id": "S00031",
+    "name": "Banarasi Georgette Saree",
+    "price": 3999.0,
+    "image": "saree00031.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_163211_1_b93ae83f-cdb9-499e-a578-576671a095d8.jpg?v=1781876999",
+    "product_url": "https://www.rimasilks.com/products/aa-35"
+  },
+  {
+    "saree_id": "S00032",
+    "name": "Banarasi Georgette Saree",
+    "price": 3999.0,
+    "image": "saree00032.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_163328_1.jpg?v=1781877064",
+    "product_url": "https://www.rimasilks.com/products/aa-36"
+  },
+  {
+    "saree_id": "S00033",
+    "name": "Banarasi Georgette Saree",
+    "price": 3999.0,
+    "image": "saree00033.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_163346_1.jpg?v=1781877134",
+    "product_url": "https://www.rimasilks.com/products/aa-37"
+  },
+  {
+    "saree_id": "S00034",
+    "name": "Banarasi Georgette Saree",
+    "price": 3999.0,
+    "image": "saree00034.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_164336_1.jpg?v=1781877239",
+    "product_url": "https://www.rimasilks.com/products/aa-38"
+  },
+  {
+    "saree_id": "S00035",
+    "name": "Banarasi Georgette Saree",
+    "price": 2999.0,
+    "image": "saree00035.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_164356_1.jpg?v=1781877296",
+    "product_url": "https://www.rimasilks.com/products/aa-39"
+  },
+  {
+    "saree_id": "S00036",
+    "name": "Pure Mashru satin silk saree",
+    "price": 4999.0,
+    "image": "saree00036.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_155959_1.jpg?v=1781181623",
+    "product_url": "https://www.rimasilks.com/products/aa-4"
+  },
+  {
+    "saree_id": "S00037",
+    "name": "Banarasi Georgette Saree",
+    "price": 3999.0,
+    "image": "saree00037.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_165301_1.jpg?v=1781877355",
+    "product_url": "https://www.rimasilks.com/products/aa-40"
+  },
+  {
+    "saree_id": "S00038",
+    "name": "Banarasi Georgette Saree",
+    "price": 3699.0,
+    "image": "saree00038.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_170210_1.jpg?v=1781877400",
+    "product_url": "https://www.rimasilks.com/products/aa-41"
+  },
+  {
+    "saree_id": "S00039",
+    "name": "Pure Mashru Crepe Saree",
+    "price": 3999.0,
+    "image": "saree00039.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_162733_1.jpg?v=1781877774",
+    "product_url": "https://www.rimasilks.com/products/aa-42"
+  },
+  {
+    "saree_id": "S00040",
+    "name": "Pure Mashru Crepe Saree",
+    "price": 3999.0,
+    "image": "saree00040.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_164629_1.jpg?v=1781877832",
+    "product_url": "https://www.rimasilks.com/products/aa-43"
+  },
+  {
+    "saree_id": "S00041",
+    "name": "Pure Mashru Crepe Saree",
+    "price": 3999.0,
+    "image": "saree00041.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_165006_1.jpg?v=1781877884",
+    "product_url": "https://www.rimasilks.com/products/aa-44"
+  },
+  {
+    "saree_id": "S00042",
+    "name": "Pure Mashru Crepe Saree",
+    "price": 3999.0,
+    "image": "saree00042.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_165033_1.jpg?v=1781877925",
+    "product_url": "https://www.rimasilks.com/products/aa-45"
+  },
+  {
+    "saree_id": "S00043",
+    "name": "Pure Mashru Crepe Saree",
+    "price": 3999.0,
+    "image": "saree00043.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_165116_1.jpg?v=1781877979",
+    "product_url": "https://www.rimasilks.com/products/aa-46"
+  },
+  {
+    "saree_id": "S00044",
+    "name": "Pure Mashru Crepe Saree",
+    "price": 2699.0,
+    "image": "saree00044.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_165138_1.jpg?v=1781878030",
+    "product_url": "https://www.rimasilks.com/products/aa-47"
+  },
+  {
+    "saree_id": "S00045",
+    "name": "Pure Mashru Crepe Saree",
+    "price": 3999.0,
+    "image": "saree00045.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_165330_1.jpg?v=1781878078",
+    "product_url": "https://www.rimasilks.com/products/aa-48"
+  },
+  {
+    "saree_id": "S00046",
+    "name": "Pure Mashru Crepe Saree",
+    "price": 2599.0,
+    "image": "saree00046.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_165356_1.jpg?v=1781878123",
+    "product_url": "https://www.rimasilks.com/products/aa-49"
+  },
+  {
+    "saree_id": "S00047",
+    "name": "Pure Mashru satin silk saree",
+    "price": 4999.0,
+    "image": "saree00047.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_160052_1.jpg?v=1781181751",
+    "product_url": "https://www.rimasilks.com/products/aa-5"
+  },
+  {
+    "saree_id": "S00048",
+    "name": "Pure Mashru Crepe Saree",
+    "price": 3599.0,
+    "image": "saree00048.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_165417_1.jpg?v=1781878190",
+    "product_url": "https://www.rimasilks.com/products/aa-50"
+  },
+  {
+    "saree_id": "S00049",
+    "name": "Pure Mashru Crepe Saree",
+    "price": 3999.0,
+    "image": "saree00049.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_165456_1.jpg?v=1781878302",
+    "product_url": "https://www.rimasilks.com/products/aa-51"
+  },
+  {
+    "saree_id": "S00050",
+    "name": "Pure Mashru Crepe Saree",
+    "price": 3999.0,
+    "image": "saree00050.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_165534_1.jpg?v=1781878358",
+    "product_url": "https://www.rimasilks.com/products/aa-52"
+  },
+  {
+    "saree_id": "S00051",
+    "name": "Pure Mashru Crepe Saree",
+    "price": 2699.0,
+    "image": "saree00051.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_165646_1.jpg?v=1781878411",
+    "product_url": "https://www.rimasilks.com/products/aa-53"
+  },
+  {
+    "saree_id": "S00052",
+    "name": "Pure Mashru satin silk saree",
+    "price": 4999.0,
+    "image": "saree00052.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_163816_1.jpg?v=1782040934",
+    "product_url": "https://www.rimasilks.com/products/aa-54"
+  },
+  {
+    "saree_id": "S00053",
+    "name": "Pure Mashru satin silk saree",
+    "price": 3499.0,
+    "image": "saree00053.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_163939_1.jpg?v=1782041398",
+    "product_url": "https://www.rimasilks.com/products/aa-55"
+  },
+  {
+    "saree_id": "S00054",
+    "name": "Pure Mashru satin silk saree",
+    "price": 4999.0,
+    "image": "saree00054.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_164427_1.jpg?v=1782041464",
+    "product_url": "https://www.rimasilks.com/products/aa-56"
+  },
+  {
+    "saree_id": "S00055",
+    "name": "Pure Mashru satin silk saree",
+    "price": 4999.0,
+    "image": "saree00055.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_164539_1.jpg?v=1782041527",
+    "product_url": "https://www.rimasilks.com/products/aa-57"
+  },
+  {
+    "saree_id": "S00056",
+    "name": "Pure Mashru satin silk saree",
+    "price": 4999.0,
+    "image": "saree00056.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_164648_1.jpg?v=1782041593",
+    "product_url": "https://www.rimasilks.com/products/aa-58"
+  },
+  {
+    "saree_id": "S00057",
+    "name": "Mashru satin silk saree",
+    "price": 3999.0,
+    "image": "saree00057.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_165614_1.jpg?v=1782041641",
+    "product_url": "https://www.rimasilks.com/products/aa-59"
+  },
+  {
+    "saree_id": "S00058",
+    "name": "Pure Mashru satin silk saree",
+    "price": 4999.0,
+    "image": "saree00058.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_160205_1.jpg?v=1781181812",
+    "product_url": "https://www.rimasilks.com/products/aa-6"
+  },
+  {
+    "saree_id": "S00059",
+    "name": "Pure Mahru satin silk saree 111",
+    "price": 4999.0,
+    "image": "saree00059.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_170427_1.jpg?v=1782136235",
+    "product_url": "https://www.rimasilks.com/products/aa-60"
+  },
+  {
+    "saree_id": "S00060",
+    "name": "Pure Mashru satin silk saree 111",
+    "price": 4999.0,
+    "image": "saree00060.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_170444_1.jpg?v=1782136543",
+    "product_url": "https://www.rimasilks.com/products/aa-61"
+  },
+  {
+    "saree_id": "S00061",
+    "name": "Pure Mashru satin silk saree",
+    "price": 4999.0,
+    "image": "saree00061.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_171614_1_f1ffbfc8-0d0f-437f-8fc3-db1d73a76a8c.jpg?v=1782136619",
+    "product_url": "https://www.rimasilks.com/products/aa-62"
+  },
+  {
+    "saree_id": "S00062",
+    "name": "Pure Mashru satin silk saree",
+    "price": 3999.0,
+    "image": "saree00062.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_172220_1.jpg?v=1782136678",
+    "product_url": "https://www.rimasilks.com/products/aa-63"
+  },
+  {
+    "saree_id": "S00063",
+    "name": "Dola digital print saree",
+    "price": 1299.0,
+    "image": "saree00063.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_172749_1_aec712ac-d66a-46a4-85fc-191b57ec6599.jpg?v=1782195940",
+    "product_url": "https://www.rimasilks.com/products/aa-64"
+  },
+  {
+    "saree_id": "S00064",
+    "name": "Dola digital print saree",
+    "price": 1299.0,
+    "image": "saree00064.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_172819_1.jpg?v=1782196322",
+    "product_url": "https://www.rimasilks.com/products/aa-65"
+  },
+  {
+    "saree_id": "S00065",
+    "name": "Dola digital print saree",
+    "price": 1299.0,
+    "image": "saree00065.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_172936_1.jpg?v=1782196786",
+    "product_url": "https://www.rimasilks.com/products/aa-66"
+  },
+  {
+    "saree_id": "S00066",
+    "name": "Dola digital print saree",
+    "price": 1299.0,
+    "image": "saree00066.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_173012_1.jpg?v=1782196828",
+    "product_url": "https://www.rimasilks.com/products/aa-67"
+  },
+  {
+    "saree_id": "S00067",
+    "name": "Dola digital print saree",
+    "price": 1299.0,
+    "image": "saree00067.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_173037_1.jpg?v=1782196890",
+    "product_url": "https://www.rimasilks.com/products/aa-68"
+  },
+  {
+    "saree_id": "S00068",
+    "name": "Dola digital print saree",
+    "price": 1299.0,
+    "image": "saree00068.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_173057_1.jpg?v=1782197008",
+    "product_url": "https://www.rimasilks.com/products/aa-69"
+  },
+  {
+    "saree_id": "S00069",
+    "name": "Pure Mashru satin silk saree",
+    "price": 4999.0,
+    "image": "saree00069.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_160245_1.jpg?v=1781181880",
+    "product_url": "https://www.rimasilks.com/products/aa-7"
+  },
+  {
+    "saree_id": "S00070",
+    "name": "Dola digital print saree",
+    "price": 1299.0,
+    "image": "saree00070.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_173142_1.jpg?v=1782197062",
+    "product_url": "https://www.rimasilks.com/products/aa-70"
+  },
+  {
+    "saree_id": "S00071",
+    "name": "Dola digital print saree",
+    "price": 1299.0,
+    "image": "saree00071.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_173211_1.jpg?v=1782197121",
+    "product_url": "https://www.rimasilks.com/products/aa-71"
+  },
+  {
+    "saree_id": "S00072",
+    "name": "Dola digital print saree",
+    "price": 1299.0,
+    "image": "saree00072.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_173239_1.jpg?v=1782197171",
+    "product_url": "https://www.rimasilks.com/products/aa-72"
+  },
+  {
+    "saree_id": "S00073",
+    "name": "Dola digital print saree",
+    "price": 1299.0,
+    "image": "saree00073.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_173258_1.jpg?v=1782197227",
+    "product_url": "https://www.rimasilks.com/products/aa-73"
+  },
+  {
+    "saree_id": "S00074",
+    "name": "Dola digital print saree",
+    "price": 1299.0,
+    "image": "saree00074.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_173322_1.jpg?v=1782197285",
+    "product_url": "https://www.rimasilks.com/products/aa-74"
+  },
+  {
+    "saree_id": "S00075",
+    "name": "Dola digital print saree",
+    "price": 1299.0,
+    "image": "saree00075.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_173342_1_c362df34-1eee-4912-a375-c19ff8ccb49b.jpg?v=1782218227",
+    "product_url": "https://www.rimasilks.com/products/aa-75"
+  },
+  {
+    "saree_id": "S00076",
+    "name": "Dola digital print saree",
+    "price": 1299.0,
+    "image": "saree00076.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_173412_1.jpg?v=1782218279",
+    "product_url": "https://www.rimasilks.com/products/aa-76"
+  },
+  {
+    "saree_id": "S00077",
+    "name": "Dola digital print saree",
+    "price": 1299.0,
+    "image": "saree00077.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_173437_1.jpg?v=1782218345",
+    "product_url": "https://www.rimasilks.com/products/aa-77"
+  },
+  {
+    "saree_id": "S00078",
+    "name": "Ernakulam silk saree with hand embroidery work",
+    "price": 3499.0,
+    "image": "saree00078.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_175426_1.jpg?v=1782218833",
+    "product_url": "https://www.rimasilks.com/products/aa-78"
+  },
+  {
+    "saree_id": "S00079",
+    "name": "Kota saree with embroidery work",
+    "price": 1499.0,
+    "image": "saree00079.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_171813_1_c7ae075b-3c56-43b0-9417-8d3e5f01fe2e.jpg?v=1782219587",
+    "product_url": "https://www.rimasilks.com/products/aa-79"
+  },
+  {
+    "saree_id": "S00080",
+    "name": "Pure Mashru satin silk saree",
+    "price": 4999.0,
+    "image": "saree00080.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_160503_1.jpg?v=1781181940",
+    "product_url": "https://www.rimasilks.com/products/aa-8"
+  },
+  {
+    "saree_id": "S00081",
+    "name": "Kota saree with embroidery work",
+    "price": 1499.0,
+    "image": "saree00081.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_171831_1.jpg?v=1782219654",
+    "product_url": "https://www.rimasilks.com/products/aa-80"
+  },
+  {
+    "saree_id": "S00082",
+    "name": "Kota saree with embroidery work",
+    "price": 1499.0,
+    "image": "saree00082.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_171849_1.jpg?v=1782219702",
+    "product_url": "https://www.rimasilks.com/products/aa-81"
+  },
+  {
+    "saree_id": "S00083",
+    "name": "Kota saree with embroidery work",
+    "price": 1499.0,
+    "image": "saree00083.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_171916_1.jpg?v=1782219740",
+    "product_url": "https://www.rimasilks.com/products/aa-82"
+  },
+  {
+    "saree_id": "S00084",
+    "name": "Kota saree with embroidery work",
+    "price": 1499.0,
+    "image": "saree00084.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_171931_1.jpg?v=1782219798",
+    "product_url": "https://www.rimasilks.com/products/aa-83"
+  },
+  {
+    "saree_id": "S00085",
+    "name": "Pure Mashru satin silk saree",
+    "price": 4999.0,
+    "image": "saree00085.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_160607_1.jpg?v=1781182358",
+    "product_url": "https://www.rimasilks.com/products/aa-9"
+  },
+  {
+    "saree_id": "S00086",
+    "name": "Banarasi Georgette Saree",
+    "price": 3999.0,
+    "image": "saree00086.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_161221_1.jpg?v=1781012246",
+    "product_url": "https://www.rimasilks.com/products/aaa"
+  },
+  {
+    "saree_id": "S00087",
+    "name": "Mashru Crepe Saree",
+    "price": 3999.0,
+    "image": "saree00087.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_162705_1.jpg?v=1781621611",
+    "product_url": "https://www.rimasilks.com/products/aaa-1"
+  },
+  {
+    "saree_id": "S00088",
+    "name": "Dola digital print saree",
+    "price": 999.0,
+    "image": "saree00088.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_172913_1.jpg?v=1782196724",
+    "product_url": "https://www.rimasilks.com/products/aaa-2"
+  },
+  {
+    "saree_id": "S00089",
+    "name": "Banarasi Georgette Saree",
+    "price": 3999.0,
+    "image": "saree00089.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_161419_1.jpg?v=1781012792",
+    "product_url": "https://www.rimasilks.com/products/aq"
+  },
+  {
+    "saree_id": "S00090",
+    "name": "Mashru Crepe Saree",
+    "price": 3999.0,
+    "image": "saree00090.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_162102_1.jpg?v=1781620163",
+    "product_url": "https://www.rimasilks.com/products/as"
+  },
+  {
+    "saree_id": "S00091",
+    "name": "Mashru Crepe Saree",
+    "price": 3999.0,
+    "image": "saree00091.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_162326_1.jpg?v=1781621100",
+    "product_url": "https://www.rimasilks.com/products/as-1"
+  },
+  {
+    "saree_id": "S00092",
+    "name": "Mashru Crepe Saree",
+    "price": 3999.0,
+    "image": "saree00092.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_162409_1.jpg?v=1781621165",
+    "product_url": "https://www.rimasilks.com/products/asd"
+  },
+  {
+    "saree_id": "S00093",
+    "name": "Mashru Crepe Saree",
+    "price": 3999.0,
+    "image": "saree00093.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_162517_1.jpg?v=1781621243",
+    "product_url": "https://www.rimasilks.com/products/asd-1"
+  },
+  {
+    "saree_id": "S00094",
+    "name": "Blue small Butta Benarasi chiffon saree",
+    "price": 4999.0,
+    "image": "saree00094.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_162953_1.jpg?v=1780664268",
+    "product_url": "https://www.rimasilks.com/products/blue-small-butta-benarasi-chiffon-saree"
+  },
+  {
+    "saree_id": "S00095",
+    "name": "Dola digital print saree",
+    "price": 1299.0,
+    "image": "saree00095.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_172845_1.jpg?v=1782196545",
+    "product_url": "https://www.rimasilks.com/products/dola-111"
+  },
+  {
+    "saree_id": "S00096",
+    "name": "Dola soft silk digital print saree",
+    "price": 2999.0,
+    "image": "saree00096.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_172013_1.jpg?v=1781013456",
+    "product_url": "https://www.rimasilks.com/products/dola-soft-silk-digital-print-saree"
+  },
+  {
+    "saree_id": "S00097",
+    "name": "Ernakulam silk saree with hand embroidery work",
+    "price": 3499.0,
+    "image": "saree00097.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_172309_1.jpg?v=1781183727",
+    "product_url": "https://www.rimasilks.com/products/ernakulam-silk-saree-with-hand-embroidery-work"
+  },
+  {
+    "saree_id": "S00098",
+    "name": "Ernakulam silk saree with hand embroidery work",
+    "price": 3499.0,
+    "image": "saree00098.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_172332_1.jpg?v=1781183938",
+    "product_url": "https://www.rimasilks.com/products/ernakulam-silk-saree-with-hand-embroidery-work-1"
+  },
+  {
+    "saree_id": "S00099",
+    "name": "Banarasi Georgette Saree",
+    "price": 3999.0,
+    "image": "saree00099.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_161509_1.jpg?v=1781270121",
+    "product_url": "https://www.rimasilks.com/products/ge"
+  },
+  {
+    "saree_id": "S00100",
+    "name": "Yellow small Butta Benarasi chiffon saree",
+    "price": 4999.0,
+    "image": "saree00100.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_163554_1.jpg?v=1780668879",
+    "product_url": "https://www.rimasilks.com/products/ightweight"
+  },
+  {
+    "saree_id": "S00101",
+    "name": "Kota digital print saree with mirror work",
+    "price": 1499.0,
+    "image": "saree00101.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_172614_1.jpg?v=1781524477",
+    "product_url": "https://www.rimasilks.com/products/ka"
+  },
+  {
+    "saree_id": "S00102",
+    "name": "Kota digital print saree with mirror work",
+    "price": 1499.0,
+    "image": "saree00102.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_172635_1.jpg?v=1781524635",
+    "product_url": "https://www.rimasilks.com/products/ka-1"
+  },
+  {
+    "saree_id": "S00103",
+    "name": "Kota digital print saree with hand embroidery beads work",
+    "price": 2999.0,
+    "image": "saree00103.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_171529_1.jpg?v=1781526447",
+    "product_url": "https://www.rimasilks.com/products/ka-10"
+  },
+  {
+    "saree_id": "S00104",
+    "name": "Kota saree with embroidery work",
+    "price": 1499.0,
+    "image": "saree00104.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_171757_1.jpg?v=1781526860",
+    "product_url": "https://www.rimasilks.com/products/ka-11"
+  },
+  {
+    "saree_id": "S00105",
+    "name": "Kota digital print saree with embroidery",
+    "price": 3200.0,
+    "image": "saree00105.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_171712_1.jpg?v=1781524769",
+    "product_url": "https://www.rimasilks.com/products/ka-2"
+  },
+  {
+    "saree_id": "S00106",
+    "name": "Kota digital print saree with hand embroidery beads work",
+    "price": 2999.0,
+    "image": "saree00106.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_171223_1.jpg?v=1781524964",
+    "product_url": "https://www.rimasilks.com/products/ka-3"
+  },
+  {
+    "saree_id": "S00107",
+    "name": "Kota digital print saree with hand embroidery beads work",
+    "price": 2999.0,
+    "image": "saree00107.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_171419_1.jpg?v=1781525556",
+    "product_url": "https://www.rimasilks.com/products/ka-4"
+  },
+  {
+    "saree_id": "S00108",
+    "name": "Kota digital print saree with hand embroidery beads work",
+    "price": 2999.0,
+    "image": "saree00108.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_171444_1.jpg?v=1781525668",
+    "product_url": "https://www.rimasilks.com/products/ka-5"
+  },
+  {
+    "saree_id": "S00109",
+    "name": "Kota digital print saree with hand embroidery beads work",
+    "price": 2999.0,
+    "image": "saree00109.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_171509_1.jpg?v=1781525768",
+    "product_url": "https://www.rimasilks.com/products/ka-6"
+  },
+  {
+    "saree_id": "S00110",
+    "name": "Kota digital print saree with hand embroidery beads work",
+    "price": 2999.0,
+    "image": "saree00110.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_171259_1.jpg?v=1781525882",
+    "product_url": "https://www.rimasilks.com/products/ka-7"
+  },
+  {
+    "saree_id": "S00111",
+    "name": "Kota digital print saree with hand embroidery beads work",
+    "price": 2999.0,
+    "image": "saree00111.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_171334_1.jpg?v=1781526284",
+    "product_url": "https://www.rimasilks.com/products/ka-8"
+  },
+  {
+    "saree_id": "S00112",
+    "name": "Kota digital print saree with hand embroidery beads work",
+    "price": 2999.0,
+    "image": "saree00112.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_171352_1.jpg?v=1781526367",
+    "product_url": "https://www.rimasilks.com/products/ka-9"
+  },
+  {
+    "saree_id": "S00113",
+    "name": "Kota digital print saree with mirror work",
+    "price": 1499.0,
+    "image": "saree00113.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_172554_1.jpg?v=1781524392",
+    "product_url": "https://www.rimasilks.com/products/ko"
+  },
+  {
+    "saree_id": "S00114",
+    "name": "Kota digital print saree with mirror work",
+    "price": 1499.0,
+    "image": "saree00114.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_172531_1.jpg?v=1781524154",
+    "product_url": "https://www.rimasilks.com/products/kota"
+  },
+  {
+    "saree_id": "S00115",
+    "name": "Red small Butta Benarasi chiffon saree",
+    "price": 4999.0,
+    "image": "saree00115.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_163538_1_7f8f2489-84eb-4409-b5ae-f4f51bb1bf74.jpg?v=1780668707",
+    "product_url": "https://www.rimasilks.com/products/lightweight"
+  },
+  {
+    "saree_id": "S00116",
+    "name": "Mashru Crepe Saree",
+    "price": 3999.0,
+    "image": "saree00116.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_162002_1.jpg?v=1781619676",
+    "product_url": "https://www.rimasilks.com/products/mas"
+  },
+  {
+    "saree_id": "S00117",
+    "name": "Pure Mashru satin Green silk saree",
+    "price": 4999.0,
+    "image": "saree00117.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_155702_1.jpg?v=1780662691",
+    "product_url": "https://www.rimasilks.com/products/mashru"
+  },
+  {
+    "saree_id": "S00118",
+    "name": "Banarasi Georgette Saree",
+    "price": 3999.0,
+    "image": "saree00118.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_161001_1.jpg?v=1781011785",
+    "product_url": "https://www.rimasilks.com/products/party-wear"
+  },
+  {
+    "saree_id": "S00119",
+    "name": "Banarasi Georgette Saree",
+    "price": 3999.0,
+    "image": "saree00119.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_161039_1.jpg?v=1781011993",
+    "product_url": "https://www.rimasilks.com/products/party-wear-1"
+  },
+  {
+    "saree_id": "S00120",
+    "name": "Red Benarasi Georgette saree",
+    "price": 3999.0,
+    "image": "saree00120.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_160830_1.jpg?v=1780670657",
+    "product_url": "https://www.rimasilks.com/products/pink-semi-georgette"
+  },
+  {
+    "saree_id": "S00121",
+    "name": "Pure Mashru satin silk saree 111",
+    "price": 4999.0,
+    "image": "saree00121.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_170341_1.jpg?v=1782136068",
+    "product_url": "https://www.rimasilks.com/products/pp-1"
+  },
+  {
+    "saree_id": "S00122",
+    "name": "Pure Mashru Satin Red silk saree",
+    "price": 4999.0,
+    "image": "saree00122.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_155520_1.jpg?v=1780661268",
+    "product_url": "https://www.rimasilks.com/products/pure-mashru-satin-red-silk-saree"
+  },
+  {
+    "saree_id": "S00123",
+    "name": "Pure Mashru satin Red silk saree",
+    "price": 4999.0,
+    "image": "saree00123.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_155909_1.jpg?v=1780663481",
+    "product_url": "https://www.rimasilks.com/products/pure-mashru-satin-red-silk-saree-1"
+  },
+  {
+    "saree_id": "S00124",
+    "name": "Pure Mashru satin yellow silk saree",
+    "price": 4999.0,
+    "image": "saree00124.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_155758_1.jpg?v=1780663319",
+    "product_url": "https://www.rimasilks.com/products/pure-mashru-satin-yellow-silk-saree"
+  },
+  {
+    "saree_id": "S00125",
+    "name": "Purple small Butta Benarasi chiffon saree",
+    "price": 4999.0,
+    "image": "saree00125.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_170243_1.jpg?v=1780666726",
+    "product_url": "https://www.rimasilks.com/products/purple-small-butta-semi-chiffon-benarasi-105-saree"
+  },
+  {
+    "saree_id": "S00126",
+    "name": "Ernakulam silk saree with hand embroidery work",
+    "price": 3499.0,
+    "image": "saree00126.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_175448_1.jpg?v=1782218927",
+    "product_url": "https://www.rimasilks.com/products/qq"
+  },
+  {
+    "saree_id": "S00127",
+    "name": "Mashru Crepe Saree",
+    "price": 3999.0,
+    "image": "saree00127.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_162437_1.jpg?v=1781621202",
+    "product_url": "https://www.rimasilks.com/products/qw"
+  },
+  {
+    "saree_id": "S00128",
+    "name": "Purple Benarasi Georgette saree",
+    "price": 3999.0,
+    "image": "saree00128.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_161349_1.jpg?v=1780671083",
+    "product_url": "https://www.rimasilks.com/products/s"
+  },
+  {
+    "saree_id": "S00129",
+    "name": "Tissue saree with zari work",
+    "price": 1999.0,
+    "image": "saree00129.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_170614_1.jpg?v=1781184409",
+    "product_url": "https://www.rimasilks.com/products/ti"
+  },
+  {
+    "saree_id": "S00130",
+    "name": "Tissue saree with zari work",
+    "price": 1999.0,
+    "image": "saree00130.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_170632_1.jpg?v=1781184482",
+    "product_url": "https://www.rimasilks.com/products/ti-1"
+  },
+  {
+    "saree_id": "S00131",
+    "name": "Tissue saree with zari work",
+    "price": 1999.0,
+    "image": "saree00131.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_170705_1.jpg?v=1781184540",
+    "product_url": "https://www.rimasilks.com/products/ti-2"
+  },
+  {
+    "saree_id": "S00132",
+    "name": "Pure kanchipuram tissue with digital print saree",
+    "price": 4999.0,
+    "image": "saree00132.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_165814_1.jpg?v=1781184607",
+    "product_url": "https://www.rimasilks.com/products/ti-3"
+  },
+  {
+    "saree_id": "S00133",
+    "name": "Pure kanchipuram tissue with digital print saree",
+    "price": 4999.0,
+    "image": "saree00133.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_165943_1.jpg?v=1781184781",
+    "product_url": "https://www.rimasilks.com/products/ti-4"
+  },
+  {
+    "saree_id": "S00134",
+    "name": "Pure kanchipuram tissue with digital print saree",
+    "price": 4999.0,
+    "image": "saree00134.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_170047_1.jpg?v=1781184836",
+    "product_url": "https://www.rimasilks.com/products/ti-5"
+  },
+  {
+    "saree_id": "S00135",
+    "name": "Pure kanchipuram tissue with digital print saree",
+    "price": 4999.0,
+    "image": "saree00135.jpg",
+    "image_url": "http://www.rimasilks.com/cdn/shop/files/20260510_170119_1.jpg?v=1781184940",
+    "product_url": "https://www.rimasilks.com/products/tt"
+  }
 ]
