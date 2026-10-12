@@ -1,6 +1,5 @@
 venv/
-saree_images/
-processed_images/
+
 
 
 .env
