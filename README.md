@@ -81,11 +81,15 @@ The app reads optional overrides from a `.env` file in the project root. The def
 | `MAX_TOP_K` | `20` | Maximum number of recommendations allowed. |
 | `MAX_UPLOAD_MB` | `10` | Maximum accepted upload size in megabytes. |
 | `ALLOWED_PRODUCT_DOMAINS` | `www.rimasilks.com,rimasilks.com` | Comma-separated HTTPS domains whose product links can be displayed. |
+| `HF_SPACE_ID` | — | Hugging Face Space ID used to generate image embeddings, in `owner/space-name` format. |
+| `HF_TOKEN` | — | Optional Hugging Face user access token, needed if the Space is private or gated. Keep it secret and do not commit it. |
 
 For example, to force CPU use, create `.env` in the project root with:
 
 ```dotenv
 DEVICE=cpu
+HF_SPACE_ID=your-username/your-space-name
+HF_TOKEN=your-hugging-face-access-token
 ```
 
 Set `DEVICE=cuda` only when CUDA is available in the installed PyTorch environment. The app reports an error at startup if CUDA is explicitly requested but unavailable.

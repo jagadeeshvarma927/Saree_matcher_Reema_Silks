@@ -1,26 +1,24 @@
 
 import io
+import os
 import uuid
 from pathlib import Path
 from urllib.parse import urlparse
 
-import open_clip
-import torch
+import numpy as np
 from PIL import Image, UnidentifiedImageError
-from fastapi import FastAPI, File, Form, HTTPException, Request, UploadFile
+from fastapi import FastAPI, File, Form, Request, UploadFile
 from fastapi.responses import HTMLResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
+from gradio_client import Client, handle_file
 
 from app.config import (
     ALLOWED_PRODUCT_DOMAINS,
     DEFAULT_MAX_PRICE,
     DEFAULT_TOP_K,
-    DEVICE,
     MAX_TOP_K,
     MAX_UPLOAD_MB,
-    MODEL_NAME,
-    PRETRAINED_MODEL,
 )
 from app.services.recommendation_service import RecommendationService
 
@@ -28,9 +26,12 @@ from app.services.recommendation_service import RecommendationService
 BASE_DIR = Path(__file__).resolve().parent.parent
 TEMPLATES_DIR = BASE_DIR / "app" / "templates"
 PROCESSED_DIR = BASE_DIR / "processed_images"
+UPLOAD_DIR = BASE_DIR / "uploads"
+
+HF_SPACE_ID = os.getenv("HF_SPACE_ID", "").strip()
+HF_TOKEN = os.getenv("HF_TOKEN", "").strip()
 
 app = FastAPI(title="Saree Matcher")
-
 templates = Jinja2Templates(directory=str(TEMPLATES_DIR))
 
 if not PROCESSED_DIR.is_dir():
@@ -44,45 +45,73 @@ app.mount(
     name="catalog-images",
 )
 
-
-def get_device():
-    if DEVICE == "auto":
-        return "cuda" if torch.cuda.is_available() else "cpu"
-
-    if DEVICE == "cuda" and not torch.cuda.is_available():
-        raise RuntimeError(
-            "DEVICE=cuda, but CUDA is unavailable."
-        )
-
-    return DEVICE
-
-
-ACTIVE_DEVICE = get_device()
-
-# Load model once per worker process.
-model, _, preprocess = open_clip.create_model_and_transforms(
-    MODEL_NAME,
-    pretrained=PRETRAINED_MODEL,
-)
-model = model.to(ACTIVE_DEVICE)
-model.eval()
-
-# Load catalog embeddings once per worker process.
+# Create the recommendation service without loading OpenCLIP.
 recommender = RecommendationService()
 
+# Reuse the Hugging Face client instead of creating one per request.
+_hf_client = None
 
-def create_embedding(image: Image.Image):
-    tensor = preprocess(image.convert("RGB")).unsqueeze(0)
-    tensor = tensor.to(ACTIVE_DEVICE)
 
-    with torch.inference_mode():
-        features = model.encode_image(tensor)
-        features = features / features.norm(
-            dim=-1,
-            keepdim=True
-        ).clamp(min=1e-12)
+def get_hf_client():
+    """Create the Hugging Face Space client on first use."""
+    global _hf_client
 
-    return features.squeeze(0).cpu().numpy()
+    if _hf_client is None:
+        if not HF_SPACE_ID:
+            raise RuntimeError(
+                "HF_SPACE_ID is not configured. "
+                "Set it to your Hugging Face Space ID, "
+                "for example username/saree-openclip-api."
+            )
+
+        client_args = {"token": HF_TOKEN} if HF_TOKEN else {}
+        _hf_client = Client(HF_SPACE_ID, **client_args)
+
+    return _hf_client
+
+
+
+def create_remote_embedding(image_path: Path) -> np.ndarray:
+    """Generate an embedding using the Hugging Face Space."""
+    print(f"[HF] Connecting to Space: {HF_SPACE_ID}")
+
+    client = get_hf_client()
+    print("[HF] Client initialized; requesting image embedding...")
+
+    result = client.predict(
+        handle_file(str(image_path)),
+        api_name="/embed",
+    )
+
+    print(f"[HF] Response type: {type(result).__name__}")
+
+    if not isinstance(result, dict):
+        raise ValueError(
+            f"Unexpected Hugging Face response: {type(result).__name__}"
+        )
+
+    embedding = np.asarray(
+        result.get("embedding"),
+        dtype=np.float32,
+    )
+
+    print(f"[HF] Model: {result.get('model')}")
+    print(f"[HF] Returned dimension: {embedding.shape}")
+
+    if embedding.shape != (512,):
+        raise ValueError(
+            f"Expected embedding shape (512,), got {embedding.shape}"
+        )
+
+    if not np.isfinite(embedding).all():
+        raise ValueError("Embedding contains invalid numeric values.")
+
+    norm = float(np.linalg.norm(embedding))
+    if norm <= 1e-12:
+        raise ValueError("Embedding is zero.")
+
+    print("[HF] Embedding received and validated successfully.")
+    return embedding / norm
 
 
 def product_url_is_allowed(url):
@@ -100,10 +129,14 @@ def product_url_is_allowed(url):
     )
 
 
-def render_page(request, recommendations=None, error=None,
-                max_price=DEFAULT_MAX_PRICE, top_k=DEFAULT_TOP_K,
-                status_code=200):
-
+def render_page(
+    request,
+    recommendations=None,
+    error=None,
+    max_price=DEFAULT_MAX_PRICE,
+    top_k=DEFAULT_TOP_K,
+    status_code=200,
+):
     safe_recommendations = None
 
     if recommendations is not None:
@@ -134,6 +167,16 @@ async def home(request: Request):
     return render_page(request)
 
 
+@app.get("/health")
+async def health():
+    """Basic health check; does not call or load the CLIP model."""
+    return {
+        "status": "ok",
+        "inference": "huggingface-space",
+        "space_configured": bool(HF_SPACE_ID),
+    }
+
+
 @app.post("/", response_class=HTMLResponse)
 async def find_sarees(
     request: Request,
@@ -143,37 +186,53 @@ async def find_sarees(
 ):
     if max_price < 0:
         return render_page(
-            request, [], "Budget cannot be negative.",
-            max_price, top_k, 400
+            request,
+            [],
+            "Budget cannot be negative.",
+            max_price,
+            top_k,
+            400,
         )
 
     if not 1 <= top_k <= MAX_TOP_K:
         return render_page(
-            request, [],
+            request,
+            [],
             f"Choose between 1 and {MAX_TOP_K} recommendations.",
-            max_price, top_k, 400
+            max_price,
+            top_k,
+            400,
         )
 
-    allowed_types = {"image/jpeg", "image/png", "image/webp"}
+    allowed_types = {
+        "image/jpeg",
+        "image/png",
+        "image/webp",
+    }
 
     if blouse_image.content_type not in allowed_types:
         return render_page(
-            request, [],
+            request,
+            [],
             "Upload a JPG, PNG, or WEBP image.",
-            max_price, top_k, 400
+            max_price,
+            top_k,
+            400,
         )
 
     max_bytes = MAX_UPLOAD_MB * 1024 * 1024
 
     try:
-        # Read at most one byte beyond the limit to detect oversized files.
         contents = await blouse_image.read(max_bytes + 1)
 
         if len(contents) > max_bytes:
             return render_page(
-                request, [],
+                request,
+                [],
                 f"Image must be {MAX_UPLOAD_MB} MB or smaller.",
-                max_price, top_k, 413
+                max_price,
+                top_k,
+                413,
             )
 
         with Image.open(io.BytesIO(contents)) as uploaded:
@@ -183,35 +242,59 @@ async def find_sarees(
             uploaded.load()
             blouse = uploaded.convert("RGB")
 
-        query_embedding = create_embedding(blouse)
-
-        # The color service currently accepts a file path.
-        upload_dir = BASE_DIR / "uploads"
-        upload_dir.mkdir(parents=True, exist_ok=True)
-
-        temp_path = upload_dir / f"{uuid.uuid4().hex}.jpg"
+        UPLOAD_DIR.mkdir(parents=True, exist_ok=True)
+        temp_path = UPLOAD_DIR / f"{uuid.uuid4().hex}.jpg"
 
         try:
+            # Save one normalized image for both remote inference
+            # and the existing color-similarity recommender.
             blouse.save(temp_path, format="JPEG", quality=95)
 
+            # Heavy OpenCLIP inference runs on Hugging Face, not Render.
+            query_embedding = create_remote_embedding(temp_path)
+
+            # Keep the existing local catalog matching and ranking logic.
             results = recommender.recommend(
                 query_embedding=query_embedding,
                 query_image_path=temp_path,
                 top_k=top_k,
                 max_price=max_price,
             )
+
+            return render_page(
+                request,
+                results,
+                None,
+                max_price,
+                top_k,
+            )
+
         finally:
             temp_path.unlink(missing_ok=True)
 
-        return render_page(
-            request, results, None, max_price, top_k
-        )
-
     except (UnidentifiedImageError, OSError, ValueError) as error:
         return render_page(
-            request, [],
+            request,
+            [],
             f"Could not process the uploaded image: {error}",
-            max_price, top_k, 400
+            max_price,
+            top_k,
+            400,
         )
+
+    except Exception as error:
+        # Return a useful page instead of exposing an unhandled server error.
+        print(f"[ERROR] Saree recommendation failed: {error}")
+        return render_page(
+            request,
+            [],
+            "Image recommendation failed. The Hugging Face Space may be "
+            "starting up, unavailable, or incorrectly configured. "
+            "Please try again shortly.",
+            max_price,
+            top_k,
+            502,
+        )
+
     finally:
         await blouse_image.close()

@@ -26,12 +26,10 @@ from urllib.parse import urlparse, urlunparse
 import numpy as np
 from PIL import Image, ImageOps
 
-try:
-    import open_clip
-    import torch
-except ImportError:
-    open_clip = None
-    torch = None
+# OpenCLIP and PyTorch are not imported when the Render app starts.
+# Remote inference is handled by the Hugging Face Space.
+open_clip = None
+torch = None
 
 
 # ---------------------------------------------------------------------
@@ -111,18 +109,38 @@ def _load_embeddings():
     return _embedding_cache, _embedding_ids_cache
 
 
+
 def _load_model():
-    global _model, _preprocess
+    """Load OpenCLIP only if local inference is explicitly requested."""
+    global _model, _preprocess, open_clip, torch, DEVICE
+
     if _model is None:
-        if open_clip is None or torch is None:
+        try:
+            import open_clip as _open_clip
+            import torch as _torch
+        except ImportError as error:
             raise ImportError(
-                "open_clip_torch and torch are required to embed the uploaded image. "
-                "Install with: pip install open_clip_torch"
-            )
-        _model, _, _preprocess = open_clip.create_model_and_transforms(
-            MODEL_NAME, pretrained=PRETRAINED_MODEL
+                "Local image inference requires open_clip_torch and torch. "
+                "The Render deployment is configured to use Hugging Face "
+                "remote inference instead."
+            ) from error
+
+        open_clip = _open_clip
+        torch = _torch
+
+        DEVICE = (
+            "cuda"
+            if torch.cuda.is_available()
+            else "cpu"
         )
+
+        _model, _, _preprocess = open_clip.create_model_and_transforms(
+            MODEL_NAME,
+            pretrained=PRETRAINED_MODEL,
+        )
+
         _model = _model.to(DEVICE).eval()
+
     return _model, _preprocess
 
 
